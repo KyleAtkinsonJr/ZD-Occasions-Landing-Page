@@ -77,14 +77,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const sendEmail = () => {
     // Check if the elements are not null before accessing their value
-    const bodyMessage = `Name: ${name ? name.value : 'N/A'}\nEmail: ${email ? email.value : 'N/A'}\nPhone: ${phone ? phone.value : 'N/A'}\nSubject: ${subject ? subject.value : 'No Subject'}\nMessage: ${message ? message.value : 'N/A'}`;
-
+    const bodyMessage = `
+    <strong>Name:</strong> ${name ? name.value : 'N/A'}<br>
+    <strong>Email:</strong> ${email ? email.value : 'N/A'}<br>
+    <strong>Phone:</strong> ${phone ? phone.value : 'N/A'}<br>
+    <strong>Subject:</strong> ${subject ? subject.value : 'No Subject'}<br>
+    <strong>Message:</strong> ${message ? message.value : 'N/A'}
+  `;
+  
     Email.send({
       Host: "smtp.elasticemail.com",
-      Username: "blkattgaming@gmail.com",
-      Password: "D2A51A479C6BD878012C70760A2A6B888297",
-      To: 'blkattgaming@gmail.com',
-      From: 'blkattgaming@gmail.com',
+      Username: "zdoccasions@gmail.com",
+      Password: "851D05D01844C62D2BB6322A22E7AA4629C4",
+      To: 'zdoccasions@gmail.com',
+      From: 'zdoccasions@gmail.com',
       Subject: subject ? subject.value : 'No Subject',
       Body: bodyMessage,
     }).then(

@@ -565,12 +565,18 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   color: #fff;
 }
 
+.client:nth-child(1) {
+  height: 29rem;
+}
 .client:nth-child(2) {
-  height: 31rem;
+  height: 28rem;
 }
 
+.client:nth-child(3) {
+  height: 29rem;
+}
 .client:nth-child(4) {
-  height: 28rem;
+  height: 30rem;
 }
 
 .client:nth-child(even) {
@@ -650,5 +656,84 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 textarea::-webkit-scrollbar {
   display: none; /* Hide the scrollbar */
+}
+
+.input-group input:focus,textarea:focus{
+  outline: solid; /* adds outline when user types */
+}
+/* End of Contact styles */
+
+/* Footer styles */
+footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+  url(images/image8.jpg) center no-repeat;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-left, .footer-right, .footer-bottom {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center; /* Center the text within each block */
+}
+
+.footer-left {
+  width: 30%;
+}
+
+.footer-right {
+  width: 50%;
+}
+
+.footer-bottom {
+  width: 100%; /* Make the bottom footer span the full width */
+  text-align: center; /* Center the text */
+}
+
+.footer-left h1, .footer-right h1 {
+  font-size: 1.5em;
+}
+
+.social-icons a {
+  margin-right: 10px;
+}
+
+.footer-right a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+/* End of Footer styles */
+
+/* Media queries */
+
+/* Default styles */
+
+/* Add your default styles here */
+
+/* Media Queries */
+@media(max-width: 1500px) {
+  html{
+    font-size: 55%;
+  }
+}
+@media(max-width: 1300px) {
+  html{
+    font-size: 50%;
+  }
+}
+@media(max-width: 1100px) {
+  html{
+    font-size: 45%;
+  }
 }
 
