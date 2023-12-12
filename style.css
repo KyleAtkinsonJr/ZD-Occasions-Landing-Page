@@ -9,16 +9,9 @@
 }
 
 html {
-  scroll-behavior: smooth;
   font-size: 62.5%;
 }
 
-.main-heading {
-  font-family: "Great vibes", cursive;
-  font-size: 4rem;
-  font-weight: 300;
-  color: #eee;
-}
 
 /* End of Default styles */
 
@@ -97,11 +90,11 @@ html {
   height: 100%;
 }
 
-.landing {
-  margin-top: 0.5rem; /* Adjust the value as needed */
-}
-
-.value {
+.main-heading {
+  font-family: "Great vibes", cursive;
+  font-size: 4rem;
+  font-weight: 300;
+  color: #eee;
 }
 
 .banner {
@@ -598,8 +591,9 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 /* End of Customer styles */
 
+
 /* Contact Style*/
-/* Styles for the .contact class */
+
 .contact{
   width: 100%; /* Set the width to 100% of its parent element */
   height: 50vh; /* Set the height to 50% of the viewport height */
@@ -612,25 +606,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   align-items: center; /* Center the content vertically */
 }
 
-/* Styles for the .contact-left class */
-.contact-left{
-  text-align: center; /* Center the text horizontally */
-  margin-left: 1.5rem; /* Add a left margin of 3rem */
-}
-
-/* Styles for the .contact-left-image-wrapper class */
-.contact-left-image-wrapper{
-  width: 60rem; /* Set the width to 60rem */
-  display: flex; /* Display the element as a flex container */
-  flex-wrap: wrap; /* Allow the flex items to wrap to the next line if there is not enough space */
-}
-
-/* Styles for the images inside the .contact-left-image-wrapper class */
-.contact-left-image-wrapper img{
-  object-fit: cover; /* Scale the image while maintaining its aspect ratio */
-  margin: 2rem; /* Add a margin of 2rem around each image */
-  cursor: pointer; /* Set the cursor to a pointer */
-}
 
 .input-group{
   display: flex; /* Display the element as a flex container */
@@ -714,11 +689,6 @@ footer {
 
 /* End of Footer styles */
 
-/* Media queries */
-
-/* Default styles */
-
-/* Add your default styles here */
 
 /* Media Queries */
 @media(max-width: 1500px) {
@@ -726,13 +696,47 @@ footer {
     font-size: 55%;
   }
 }
+
 @media(max-width: 1300px) {
   html{
     font-size: 50%;
   }
 }
+
 @media(max-width: 1100px) {
   html{
     font-size: 45%;
+
+    .services-img-wrapper{
+      width: 20rem;
+      height: 20rem;
+    }
+
+    .customers{
+      height: 120vh;
+    }
+
+    .clients{
+      flex-direction: column;
+    }
+
+    .client{
+      width: 100%;
+      height: 15rem;
+    }
+
+    .client:nth-child(1) {
+      height: 15rem;
+    }
+
+
+    .client:nth-child(2) {
+      height: 15rem;
+    }
+
+    .client:nth-child(3) {
+      height: 15rem;
+    }
   }
 }
+
