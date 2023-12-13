@@ -51,12 +51,6 @@ html {
   cursor: pointer;
 }
 
-.logo img {
-  font-size: 4rem;
-  -webkit-text-stroke: 1rem white;
-  color: transparent;
-  margin-right: 1rem;
-}
 
 .navigation a {
   font-size: 1.6rem;
@@ -88,15 +82,10 @@ html {
 /* Landing*/
 .landing {
   width: 100%;
-  height: 100%;
+  height: 95vh;
+  position: relative;
 }
 
-.main-heading {
-  font-family: "Great vibes", cursive;
-  font-size: 4rem;
-  font-weight: 300;
-  color: #eee;
-}
 
 .banner {
   position: absolute;
@@ -107,13 +96,20 @@ html {
   text-align: center;
   height: 100%;
 }
+.main-heading {
+  font-family: "Great vibes", cursive;
+  font-size: 4rem;
+  font-weight: 300;
+  color: #eee;
+}
 
 .banner h1 {
   font-size: 6rem;
   font-weight: 400;
   text-transform: uppercase;
   color: #eee;
-  margin: 2rem;
+  margin: 2rem 0;
+  line-height: 1.5;
 }
 
 .banner p{
@@ -152,10 +148,6 @@ html {
 .swiper {
   width: 100%;
   height: 85%;
-}
-
-.swiper-slide {
-  position: relative;
 }
 
 .swiper-slide img {
