@@ -308,7 +308,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 /* Service Style */
 .services {
   width: 100%;
-  height: 90vh;
+  height: 80vh;
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
     url(images/image8.jpg) center no-repeat;
   background-size: cover;
@@ -325,7 +325,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 
 .services-left h1 {
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 300;
   text-transform: uppercase;
   color: #fff;
@@ -557,7 +557,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 .customers-banners .main-heading {
   font-size: 4rem; /* Adjusted font size */
   font-weight: 600;
-  margin: 0;
 }
 
 .customers-banners h1 {
@@ -578,6 +577,8 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   display: flex;
   justify-content: space-around;
   margin-top: 1rem; /* Adjusted margin */
+  margin-right: 2rem;
+  margin-left: 2rem;
   flex-wrap: wrap; /* Allow testimonials to wrap to the next line */
 }
 
@@ -730,40 +731,121 @@ footer {
     font-size: 50%;
   }
 }
-
-@media(max-width: 1100px) {
-  html{
+@media (max-width: 1100px) {
+  html {
     font-size: 45%;
-
-    .services-img-wrapper{
-      width: 20rem;
-      height: 20rem;
-    }
-
-    .customers{
-      height: 120vh;
-    }
-
-    .clients{
-      flex-direction: column;
-    }
-
-    .client{
-      width: 100%;
-      height: 15rem;
-    }
-
-    .client:nth-child(1) {
-      height: 15rem;
-    }
-
-
-    .client:nth-child(2) {
-      height: 15rem;
-    }
-
-    .client:nth-child(3) {
-      height: 15rem;
-    }
   }
+
+  .services-img-wrapper {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .customers {
+    height: 120vh;
+  }
+
+  .clients {
+    flex-direction: column;
+  }
+
+  .client {
+    width: 100%;
+    max-width: none;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 40%; /* Adjust the font size for smaller screens */
+  }
+
+  .clients {
+    flex-direction: column;
+  }
+
+  .client {
+    width: 100%;
+    max-width: none;
+  }
+  .value {
+    height: auto; /* Adjust height for smaller screens */
+    padding: 2rem; /* Add padding to the value section for better spacing */
+  }
+
+  .value-left-section {
+    max-width: 100%; /* Allow the left section to take full width */
+  }
+
+  .values-section-heading {
+    font-size: 5rem; /* Adjust heading font size for smaller screens */
+    text-align: center; /* Center the heading */
+    color: #eee; /* Adjust heading color for better visibility */
+    margin-top: 12rem;
+  }
+  .value p{
+    margin-bottom: 1rem;
+  }
+
+  .value-section {
+    width: 100%; /* Make value sections full width on smaller screens */
+    margin: 1rem 0; /* Adjust margin for better spacing */
+  }
+
+  .services {
+    flex-direction: column; /* Stack the sections vertically on smaller screens */
+    height: auto; /* Adjust height for smaller screens */
+  }
+
+  .services-left,
+  .services-right {
+    width: 100%; /* Make both sections take full width on smaller screens */
+    text-align: center; /* Center the text */
+    margin: 0; /* Remove the margin on smaller screens */
+  }
+
+  .services-left h1 {
+    font-size: 3rem; /* Adjust heading font size for smaller screens */
+    margin-top: 0; /* Remove the top margin */
+  }
+
+  .services-img-wrapper {
+    width: calc(100% - 4rem); /* Calculate the width with margins included */
+    height: 250px; /* Set the height to 150px */
+    margin: 0 2rem 2rem 2rem; /* Add margin to all sides except the top */
+  }
+
+  .services-img-wrapper img {
+    width: 100%; /* Make the image take full width of the container */
+    height: 100%; /* Maintain the aspect ratio */
+    object-fit: cover; /* Maintain the image aspect ratio */
+    cursor: pointer;
+    transition: transform 0.6s;
+  }
+
+  .services-right-images {
+    width: 100%; /* Make the image wrapper take full width on smaller screens */
+  }
+
+  .overlay p {
+    font-size: 1rem; /* Adjust paragraph font size for smaller screens */
+  }
+
+  .contact-button {
+    font-size: 1.2rem; /* Adjust button font size for smaller screens */
+    padding: 2rem; /* Adjust padding for better spacing */
+    margin-bottom: 2rem;
+  }
+
+  .services-img-wrapper:hover img {
+    transform: scale(1); /* Remove the scaling on hover for smaller screens */
+  }
+
+  /* Remove unnecessary styles for smaller screens */
+  .border,
+  .services-img-wrapper:hover .border::before {
+    border: none;
+  }
+
 }
