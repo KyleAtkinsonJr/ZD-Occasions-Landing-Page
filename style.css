@@ -82,8 +82,9 @@ html {
 /* Landing*/
 .landing {
   width: 100%;
-  height: 95vh;
+  height: 90vh;
   position: relative;
+  margin-bottom: -150px;
 }
 
 
@@ -202,14 +203,41 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   height: 50vh;
   background-color: #020302;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: stretch;
   align-items: center;
+  margin: -1px;
 }
 
-.value div {
+.value-left-section {
+  width: 100%;
+  max-width: 800px; /* Limit the width */
+  margin: auto; /* Center the content */
+}
+
+.value-right-section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.value-section {
+  width: 45%; /* Adjust the width as needed */
+  height: 15rem;
+  margin: 1rem;
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 32px / 81px;
+  box-shadow: 5px 10.1px 10.1px hsla(0, 15%, 91%, 0.34);
+}
+
+.value-section {
   width: 30rem;
   height: 15rem;
   margin: 1rem;
@@ -228,7 +256,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   font-size: 4rem;
   font-weight: 300;
   color: #eee;
-  margin: 5%;
+  margin: 5% auto;
 }
 
 .value-section h1 {
@@ -240,7 +268,27 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   letter-spacing: 0.1rem;
 }
 
-.value p {
+
+.value-left-section h3 {
+  font-size: 1.5rem;
+  font-weight: 4800;
+  color: #fffafa;
+  width: 100%;
+  margin: 0 auto 1rem auto;
+  letter-spacing: 0.1rem;
+  align-content: center;
+}
+
+.value-left-section p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #ffffff;
+  width: 100%;
+  margin: 0 auto 0 auto;
+  letter-spacing: 0.1rem;
+}
+
+.value-right-section p {
   font-size: 1.2rem;
   font-weight: 300;
   color: #000000;
@@ -260,7 +308,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 /* Service Style */
 .services {
   width: 100%;
-  height: 70vh;
+  height: 90vh;
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
     url(images/image8.jpg) center no-repeat;
   background-size: cover;
@@ -419,7 +467,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 /* Data styles */
 .data{
   width: 100%; /* Set the width to 100% of the container */
-  height:50vh;
+  height: 30vh;
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
     url(images/image8.jpg) center no-repeat;  
     background-size: cover;
@@ -488,101 +536,80 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 /* End of Data styles */
 
 /* Customer styles */
-.customers{
+.customers {
+  position: relative;
   width: 100%;
-  height: 70vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
-  url(images/image8.jpg) center no-repeat;
+  height: 50vh; /* Adjusted height */
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url(images/image8.jpg) center no-repeat;
   background-size: cover;
-  position: relative;
-}
-
-.customers-banners{
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-}
-
-.customers-banners .main-heading{
-  font-size: 6rem;
-  position: relative;
-  z-index: 10;
-}
-
-.customers-banners h1{
-  font-size: 6rem;
-  font-weight: 300;
-  text-transform: uppercase;
   color: #fff;
-  margin-top: -4rem;
-}
-
-.customers-banners p{
-  font-size: 1.6rem;
-  color: #777;
-  margin-top: 4rem;
-  line-height: 1.2;
-}
-
-.client div {
-  position: absolute;
-  bottom: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.customers-banners {
+  text-align: center;
+}
+
+.customers-banners .main-heading {
+  font-size: 4rem; /* Adjusted font size */
+  font-weight: 600;
+  margin: 0;
+}
+
+.customers-banners h1 {
+  font-size: 3.5rem; /* Adjusted font size */
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: -1rem; /* Adjusted margin */
+}
+
+.customers-banners p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-top: 1rem;
+  line-height: 1.5;
 }
 
 .clients {
-  position: absolute;
-  bottom: 0;
   display: flex;
-  align-items: flex-end;
-  
+  justify-content: space-around;
+  margin-top: 1rem; /* Adjusted margin */
+  flex-wrap: wrap; /* Allow testimonials to wrap to the next line */
 }
 
 .client {
-  width: 25%;
-  height: 25rem;
-  background-color: #c49b63;
-  padding: 2rem;
+  width: 23%;
+  background-color: #333;
+  padding: 1.5rem; /* Adjusted padding */
   color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0.5rem; /* Adjusted margin */
 }
 
-.client:nth-child(1) {
-  height: 29rem;
-}
-.client:nth-child(2) {
-  height: 28rem;
-}
-
-.client:nth-child(3) {
-  height: 29rem;
-}
-.client:nth-child(4) {
-  height: 30rem;
+.client-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.client:nth-child(even) {
-  opacity: 0.9;
-}
-
-.client p {
-  font-size: 1.6rem;
-  margin-bottom: 2rem;
-}
-
-
-.client img{
-  width: 5rem;
-  height: 5rem;
+.client img {
+  width: 70px; /* Adjusted size */
+  height: 70px; /* Adjusted size */
   object-fit: cover;
   border-radius: 50%;
-  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+.client div span {
+  font-size: 1rem;
 }
 /* End of Customer styles */
+
 
 
 /* Contact Style*/
@@ -599,36 +626,44 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   align-items: center; /* Center the content vertically */
 }
 
-
-.input-group{
-  display: flex; /* Display the element as a flex container */
+.input-group {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  margin: 1.5rem ;
 }
 
-.input-group input,textarea{
-  width: 30rem;
-  height: 5rem; /* Set the width to 100% of its parent element */
-  padding: 1rem; /* Add padding of 1rem */
-  margin: 1rem 1rem 2rem 0; /* Add a margin of 1rem */
-  border: none; /* Remove the border */
-  border-bottom: 0.1rem solid #c49b63; /* Add a 0.1rem solid border to the bottom */
-  background-color: transparent; /* Set the background color to #eee */
-  font-size: 1.5rem; /* Set the font size to 1.5rem */
-  font-weight: 300; /* Set the font weight to 300 */
-  color: #ffffff; /* Set the text color to #000 */
+.contact h3{
+  margin: 1.5rem;
+}
+.input-group input,
+.input-group textarea {
+  flex: 1; /* Take up remaining space */
+  width: auto; /* Make width flexible */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+  height: 5rem;
+  padding: 1rem;
+  margin: 1rem 1rem 2rem 0;
+  border: none;
+  border-bottom: 0.1rem solid #c49b63;
+  background-color: transparent;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #ffffff;
 }
 
-.input-group textarea{
-  resize: none; /* Disable the ability to resize the textarea */
-  height: 5rem; /* Set the height to 10rem */
+.input-group textarea {
+  resize: none;
 }
 
 textarea::-webkit-scrollbar {
-  display: none; /* Hide the scrollbar */
+  display: none;
 }
 
-.input-group input:focus,textarea:focus{
-  outline: solid; /* adds outline when user types */
+.input-group input:focus,
+.input-group textarea:focus {
+  outline: solid;
 }
+
 /* End of Contact styles */
 
 /* Footer styles */
@@ -732,4 +767,3 @@ footer {
     }
   }
 }
-
