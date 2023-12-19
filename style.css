@@ -567,7 +567,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 
 .customers-banners p {
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: #ccc;
   margin-top: 1rem;
   line-height: 1.5;
@@ -589,7 +589,8 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 0.5rem; /* Adjusted margin */
+ margin-left: 1.2rem;
+ margin-right: 1.2rem;
 }
 
 .client-content {
@@ -761,18 +762,34 @@ footer {
     font-size: 40%; /* Adjust the font size for smaller screens */
   }
 
+  .banner p{
+    font-size: 2.4rem;
+  }
+
   .clients {
     flex-direction: column;
+    align-content: space-around;
+    
+  }
+
+  .clients p{
+    font-size: 2rem;  
   }
 
   .client {
     width: 100%;
     max-width: none;
   }
+
+  .clients .client {
+    margin-bottom: 2rem; /* Adjust the margin-bottom for better spacing */
+  }
+
   .value {
     height: auto; /* Adjust height for smaller screens */
     padding: 2rem; /* Add padding to the value section for better spacing */
   }
+
 
   .value-left-section {
     max-width: 100%; /* Allow the left section to take full width */
@@ -785,7 +802,9 @@ footer {
     margin-top: 12rem;
   }
   .value p{
+    font-size: 2rem;
     margin-bottom: 1rem;
+    justify-content: center;
   }
 
   .value-section {
@@ -798,6 +817,9 @@ footer {
     height: auto; /* Adjust height for smaller screens */
   }
 
+  .services p{
+    font-size: 2rem;
+  }
   .services-left,
   .services-right {
     width: 100%; /* Make both sections take full width on smaller screens */
@@ -829,8 +851,27 @@ footer {
   }
 
   .overlay p {
-    font-size: 1rem; /* Adjust paragraph font size for smaller screens */
+    font-size: 4rem; /* Adjust paragraph font size for smaller screens */
   }
+
+  .input-group {
+    flex-direction: column; /* Stack the input groups vertically on smaller screens */
+  }
+  .input-group text-area{
+    columns: 10;
+    rows: 10;
+  }
+
+  .input-group input,
+.input-group textarea {
+  font-size: 1.8rem; /* Adjust the font size for better visibility */
+  padding: 1.5rem; /* Adjust the padding for better spacing */
+  margin: 1.5rem 1rem 2rem 0; /* Adjust the margin for better spacing */
+}
+
+.contact h3{
+  text-align: center;
+}
 
   .contact-button {
     font-size: 1.2rem; /* Adjust button font size for smaller screens */
@@ -846,6 +887,42 @@ footer {
   .border,
   .services-img-wrapper:hover .border::before {
     border: none;
+  }
+
+  footer {
+    display: none;
+  }
+
+  /* Adjust the styles for other sections to fit the page */
+  .navbar {
+    height: 8rem; /* Adjust the height of the navbar */
+  }
+
+  .landing {
+    height: 80vh; /* Adjust the height of the landing section */
+  }
+
+  .value {
+    height: auto; /* Allow the values section to adjust its height */
+  }
+
+  .services {
+    height: auto; /* Allow the services section to adjust its height */
+    flex-direction: column; /* Stack services-left and services-right vertically */
+    align-items: center;
+  }
+
+  .data {
+    height: auto; /* Allow the data section to adjust its height */
+    flex-direction: column; /* Stack the data divs vertically */
+  }
+
+  .customers {
+    height: auto; /* Allow the customers section to adjust its height */
+  }
+
+  .contact {
+    height: auto; /* Allow the contact section to adjust its height */
   }
 
 }
