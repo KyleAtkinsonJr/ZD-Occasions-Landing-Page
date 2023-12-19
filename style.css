@@ -280,12 +280,14 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 
 .value-left-section p {
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: 300;
   color: #ffffff;
   width: 100%;
   margin: 0 auto 0 auto;
   letter-spacing: 0.1rem;
+  margin-left: 1.6rem;
+  margin-right: 1.6rem;
 }
 
 .value-right-section p {
@@ -333,11 +335,13 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 
 .services-left p {
-  font-size: 1.5rem; /* Increased font size */
+  font-size: 2rem; /* Increased font size */
   font-weight: 300;
   color: #fff;
   margin-top: -1rem;
   margin-bottom: 2rem;
+  margin-left: 1.6rem;
+  margin-right: 1.6rem;
 }
 
 .services-img-wrapper:hover .overlay {
@@ -555,7 +559,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 
 .customers-banners .main-heading {
-  font-size: 4rem; /* Adjusted font size */
+  font-size: 6rem; /* Adjusted font size */
   font-weight: 600;
 }
 
@@ -567,7 +571,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 
 .customers-banners p {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   color: #ccc;
   margin-top: 1rem;
   line-height: 1.5;
@@ -761,6 +765,14 @@ footer {
     font-size: 40%; /* Adjust the font size for smaller screens */
   }
 
+  .landing .main-heading {
+    font-size: 6rem; /* Adjust heading font size for smaller screens */
+  }
+
+  .banner p{
+    font-size: 1.8rem;
+  }
+  
   .clients {
     flex-direction: column;
   }
