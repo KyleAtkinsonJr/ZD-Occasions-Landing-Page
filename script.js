@@ -78,13 +78,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const sendEmail = () => {
     // Check if the elements are not null before accessing their value
     const bodyMessage = `
-    <strong>Name:</strong> ${name ? name.value : 'N/A'}<br>
-    <strong>Email:</strong> ${email ? email.value : 'N/A'}<br>
-    <strong>Phone:</strong> ${phone ? phone.value : 'N/A'}<br>
-    <strong>Subject:</strong> ${subject ? subject.value : 'No Subject'}<br>
-    <strong>Message:</strong> ${message ? message.value : 'N/A'}
-  `;
-  
+      <strong>Name:</strong> ${name ? name.value : 'N/A'}<br>
+      <strong>Email:</strong> ${email ? email.value : 'N/A'}<br>
+      <strong>Phone:</strong> ${phone ? phone.value : 'N/A'}<br>
+      <strong>Subject:</strong> ${subject ? subject.value : 'No Subject'}<br>
+      <strong>Message:</strong> ${message ? message.value : 'N/A'}
+    `;
+
     Email.send({
       Host: "smtp.elasticemail.com",
       Username: "zdoccasions@gmail.com",
@@ -94,7 +94,21 @@ document.addEventListener('DOMContentLoaded', () => {
       Subject: subject ? subject.value : 'No Subject',
       Body: bodyMessage,
     }).then(
-      (message) => alert(message)
+      (message) => {
+        // Display success message after successful email send
+        Swal.fire({
+          title: 'Success!',
+          text: 'Your message has been sent. We will be back with you soon.',
+          icon: 'success',
+          timer: 3000, // Adjust the timer as needed
+          showConfirmButton: false
+        });
+      }
+    ).catch(
+      (error) => {
+        // Handle error, you might want to display an error message to the user
+        console.error('Error sending email:', error);
+      }
     );
   };
 
@@ -104,4 +118,3 @@ document.addEventListener('DOMContentLoaded', () => {
     emailForm.reset();
   });
 });
-
