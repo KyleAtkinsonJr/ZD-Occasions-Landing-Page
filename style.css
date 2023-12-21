@@ -790,7 +790,7 @@ footer {
   }
 
   .banner p{
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 
   .clients {
@@ -886,7 +886,6 @@ footer {
   }
   .input-group text-area{
     columns: 10;
-    rows: 10;
   }
 
   .input-group input,
