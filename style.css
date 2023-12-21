@@ -88,36 +88,46 @@ html {
 }
 
 
+/* Landing */
+
+.landing {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  margin-bottom: -150px;
+}
 .banner {
   position: absolute;
-  top: 20%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%);
+  transform: translate(-50%, -50%);
   z-index: 100;
   text-align: center;
-  height: 100%;
+  width: 80%; /* Adjusted width for better responsiveness on smaller screens */
 }
+
 .main-heading {
   font-family: "Great vibes", cursive;
   font-size: 4rem;
   font-weight: 300;
   color: #eee;
+  margin-bottom: 1rem; /* Add margin for better spacing */
 }
 
 .banner h1 {
-  font-size: 6rem;
+  font-size: 4rem; /* Adjusted font size */
   font-weight: 400;
   text-transform: uppercase;
   color: #eee;
-  margin: 2rem 0;
+  margin: 1rem 0; /* Adjusted margin */
   line-height: 1.5;
 }
 
-.banner p{
+.banner p {
   font-size: 1.5rem;
   font-weight: 300;
   color: #eee;
-  width: 60rem;
+  width: 100%; /* Adjusted width for better responsiveness */
   margin: 0 auto 2rem auto;
   letter-spacing: 0.1rem;
 }
@@ -788,9 +798,26 @@ footer {
   html {
     font-size: 40%; /* Adjust the font size for smaller screens */
   }
+  .banner {
+    width: 90%; /* Adjusted width for smaller screens */
+  }
 
-  .banner p{
-    font-size: 2rem;
+  .main-heading {
+    font-size: 3rem; /* Adjusted font size for smaller screens */
+  }
+
+  .banner h1 {
+    font-size: 3rem; /* Adjusted font size for smaller screens */
+    margin: 0.5rem 0; /* Adjusted margin */
+  }
+
+  .banner p {
+    font-size: 1.8rem; /* Adjusted font size for smaller screens */
+  }
+
+  .banner-btn-1 {
+    font-size: 1.2rem; /* Adjusted font size for smaller screens */
+    padding: 0.8rem 1.5rem; /* Adjusted padding for better spacing */
   }
 
   .clients {
