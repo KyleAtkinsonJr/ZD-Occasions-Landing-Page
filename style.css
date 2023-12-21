@@ -803,16 +803,16 @@ footer {
   }
 
   .main-heading {
-    font-size: 3rem; /* Adjusted font size for smaller screens */
+    font-size: 3.6rem; /* Adjusted font size for smaller screens */
   }
 
   .banner h1 {
-    font-size: 3rem; /* Adjusted font size for smaller screens */
+    font-size: 3.2rem; /* Adjusted font size for smaller screens */
     margin: 0.5rem 0; /* Adjusted margin */
   }
 
   .banner p {
-    font-size: 1.8rem; /* Adjusted font size for smaller screens */
+    font-size: 2.4rem; /* Adjusted font size for smaller screens */
   }
 
   .banner-btn-1 {
